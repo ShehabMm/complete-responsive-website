@@ -55,6 +55,24 @@ nav ul li {
 
 nav ul li a{
 font-size: 18px;
+position:relative;
 
 }
 
+nav ul li a::after{
+content: "";
+background-color: crimson;
+width:0;
+bottom:-5px;
+position:absolute;
+height: 4px;
+left:0;
+
+}
+
+nav ul li a:hover::after{
+
+width: 100%;
+transition:all 0.3s ease;
+
+}
