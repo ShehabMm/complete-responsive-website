@@ -7,40 +7,28 @@
   list-style: none;
   color: #fff;
   text-transform: capitalize;
-
 }
 
 body {
   background: #080808;
-
-
 }
-
 
 /* navbar..... */
 
 .header {
   width: 100%;
   height: 100vh;
-  background-image: url(images/imgonline-com-ua-resize-Ijd6MOKLB8QnK.png);
-  background-size: auto;
-  background-repeat: no-repeat;
-  background-position-x: right;
-  background-position-y: 200px;
-  background-clip: border-box;
+  border-bottom: 1px solid #ffffff3a;
 
 }
-
 
 .container {
   display: flex;
   justify-content: right;
-
   padding: 10px 10%;
 }
 
 nav {
-
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -48,31 +36,87 @@ nav {
 }
 
 nav ul li {
-
   display: inline-block;
   margin: 10px 20px;
 }
 
-nav ul li a{
-font-size: 18px;
-position:relative;
+nav ul li a {
+  font-size: 18px;
+  position: relative;
+}
+
+nav ul li a::after {
+  content: "";
+  background-color: #ff004f;
+  width: 0;
+  bottom: -5px;
+  position: absolute;
+  height: 3px;
+  left: 0;
+}
+
+nav ul li a:hover::after {
+  width: 100%;
+  transition: all 0.3s ease;
+}
+
+/* .........finished navbar......... */
+
+/* .....main text.... */
+.header-text {
+  margin-left: 10%;
+  margin-top: 20%;
+  font-size: 30px;
+}
+
+
+.header-text h1 {
+  font-size: 60px;
+  margin-top: 20px;
+}
+
+.header-text h1 span {
+  color: #ff004f;
+}
+
+.head-img {
+  width: fit-content;
+  position: absolute;
+  right: 180px;
+  top: 30%;
+
 
 }
 
-nav ul li a::after{
-content: "";
-background-color: crimson;
-width:0;
-bottom:-5px;
-position:absolute;
-height: 4px;
-left:0;
+.head-img:hover{
+
+transform: rotate3d(250deg);
 
 }
 
-nav ul li a:hover::after{
+.head-img img {
+height: 60vh;
+  border-radius: 15px;
 
-width: 100%;
-transition:all 0.3s ease;
+}
 
+
+/* .....second section about..... */
+
+
+#about {
+  height: 100vh;
+  width: 100%;
+
+  padding: 80px 0;
+  color: #ababab;
+
+
+}
+
+.row{
+
+display:flex;
+justify-content:space-between;
+flex-wrap: wrap;
 }
